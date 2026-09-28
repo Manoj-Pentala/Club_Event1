@@ -4,7 +4,7 @@ let student=require("./routes/route/student");
 let staff=require("./routes/route/staff");
 let mongoose=require("mongoose");
 
-mongoose.connect("mongodb://localhost:27017//club_event")
+mongoose.connect("mongodb://localhost:27017/club_event")
 .then(()=>{
     console.log("connected to mongodb");
 }).catch((err)=>{

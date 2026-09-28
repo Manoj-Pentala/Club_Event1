@@ -1,6 +1,8 @@
 let express=require("express");
 let router=express.Router();
-let staff=require("../model/staff");
+let {staff}=require("../../model/staff");
+
+
 router.post("/register",(req,res)=>{
     console.log("Staff registered");
 })

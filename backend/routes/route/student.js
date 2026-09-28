@@ -1,8 +1,10 @@
 let express=require("express");
 let router=express.Router();
-let student=require("../model/student");
+let {student}=require("../../model/student");
+
+
 router.post("/register",(req,res)=>{
-    console.log("student registered");
+   res.send("register called")
 })
 router.post("/login",(req,res)=>{
     console.log("student login");
