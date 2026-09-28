@@ -1,9 +1,10 @@
 let express=require("express");
 let router=express.Router();
-let {student}=require("../../model/student");
+// let {student}=require("../model/student");
 
 
 router.post("/register",(req,res)=>{
+    console.log(req.body);
    res.send("register called")
 })
 router.post("/login",(req,res)=>{
@@ -27,6 +28,6 @@ router.get("/ODstatus",(req,res)=>{
 })
 router.post("/report",(req,res)=>{
     console.log("student reported sucessfully");
-})
+});
 
 module.exports=router;

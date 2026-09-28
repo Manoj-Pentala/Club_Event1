@@ -1,6 +1,6 @@
 let express=require("express");
 let router=express.Router();
-let {staff}=require("../../model/staff");
+// let {staff}=require("../model/staff");
 
 
 router.post("/register",(req,res)=>{
@@ -20,7 +20,7 @@ router.post("/viewODs",(req,res)=>{
 })
 router.post("/approveODs",(req,res)=>{
     console.log("Staff will approve ODs");
-})
+});
 
 
 
