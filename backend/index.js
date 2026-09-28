@@ -10,7 +10,7 @@ mongoose.connect("mongodb://localhost:27017/club_event")
 }).catch((err)=>{
     console.log(err);
 })
-app.use(expresss.json)
+app.use(expresss.json());
 app.use("/vig/student",student);
 app.use("/vig/staff",staff);
 
