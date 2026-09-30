@@ -4,7 +4,7 @@ let studentSchema=mongoose.Schema({
     "rollno":String,
     "email":String,
     "password":String,
-    "searchevents":String,
+    "searchevents":String
     
 })
 
